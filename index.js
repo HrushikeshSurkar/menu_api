@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const url = 'mongodb://localhost/menudb'
 
 const app = express()
-mongoose.set('strictQuery', false);
+// mongoose.set('strictQuery', false);
 mongoose.connect(url, { useNewUrlParser: true })
 const con = mongoose.connection
 
