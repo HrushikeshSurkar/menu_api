@@ -39,7 +39,7 @@ router.patch('/:id', async (req, res) => {
     try {
         const menu = await Menu.findById(req.params.id)
         menu.name = req.body.name
-        menu.tech = req.body.price
+        menu.price = req.body.price
         const a1 = await menu.save()
         res.json(a1)
     } catch (err) {
