@@ -5,11 +5,11 @@ const menuSchema = new mongoose.Schema({
 
     name: {
         type: String,
-        required: 'Please enter your name',
+//         required: 'Please enter your name',
     },
     price: {
         type: Number,
-        required: 'Please enter Prise',
+//         required: 'Please enter Prise',
     }
 
 })
